@@ -1,7 +1,97 @@
-body {
-    background: darkgreen;
-  }
+* {
+  font-family: system-ui, -apple-system;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-  h1 {
-    color: white;
-  }
+html {
+  background-color:#01376B;
+}
+
+#logo {
+  color: white;
+  font-size: 20px;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  margin-top: 8;
+  margin-left: 24;
+  margin-right: 24;
+  margin-bottom: 8;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: #F9B828;
+}
+
+section.landingPage {
+  display: flex;
+  justify-content: center;
+  margin-left: 50;
+  margin-right: 50;
+  margin-top: 50;
+}
+
+.introductionTextSection {
+  width: 40%;
+  margin-right: 50;
+  font-size: 25px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.skills li {
+  list-style: none;
+  font-style: italic;
+  color: #F233AF;
+  font-size: 20px;
+}
+
+.myName {
+  font-size: 60px;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.socialMediaIcons {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
