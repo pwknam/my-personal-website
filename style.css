@@ -1,11 +1,92 @@
 * {
-  font-family: system-ui, -apple-system;
-  color: white;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html {
-  background-color:#01376B;
+body {
+    background-color: #01376B;
 }
 
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01376B;
+    margin: 20px;
+}
+
+
+.navBar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navBar li {
+    list-style: none;
+}
+
+.navBar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navBar-links a:hover {
+    transition: 0.3s ease;
+    color: #F9B828;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 850px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navBar-links {
+       display: none;
+       width: 100%;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navBar-links li {
+        text-align: center;
+    }
+
+    .navBar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navBar-links.active { 
+        display: flex;
+    }
+}
