@@ -89,4 +89,26 @@ body {
     .navBar-links.active { 
         display: flex;
     }
+
+    /* BRADS CODE */
+    .navBar {
+        position: relative;
+    }
+
+    .navBar-links.active {
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        margin-left: -20px;
+        background-color: green;
+    }
+
+    .navBar-links li {
+        border-bottom: 1px solid white;
+    }
+
+    .navBar-links li:first-child {
+        border-top: 1px solid white;
+    }
 }
+
