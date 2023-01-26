@@ -110,13 +110,25 @@ body {
     .navBar-links li:first-child {
         border-top: 1px solid white;
     }
+
+    .profilePicture img {
+        width: 401px;
+        height: 435px;
+    }
 }
 
 .landingPage {
     display: flex;
-    margin-left: 20vw;
-    margin-right: 20vw;
     margin-top: 5vh;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.landingPageContents {
+    display: flex;
+    /* background-color: red; */
+    max-width: 1300px;
+
 }
 
 .skills {
@@ -173,6 +185,7 @@ svg rect:hover {
 
 .introductionTextSection {
     color: white;
+    margin-right: 30px;
 }
 
 .myName {
@@ -188,16 +201,40 @@ svg rect:hover {
 }
 
 .bio {
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
-@media (max-width: 980px) {
-    /* .profilePicture img {
-        width: 401px;
-        height: 435px;
-    } */
+#designPortfolioHyperlink {
+    text-decoration: none;
+    color: #F9B828;
+}
 
+#designPortfolioHyperlink:hover {
+    text-decoration: underline;
+    color: #F9B828;
+}
+
+@media (max-width: 1250px) {
     .landingPage {
-        display: block;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
+    .landingPageContents {
+        display: block;
+        /* max-width: 75%; */
+    }
+
+    .profilePicture {
+        margin-top: 2vh;
+    }
+
+    .introductionTextSection h1 {
+        font-size: 50px;
+    }
+
+    .introductionTextSection p {
+        font-size: 17.5px;
+    }
+
+   
 }
