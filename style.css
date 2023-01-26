@@ -135,11 +135,14 @@ body {
 }
 
 .landingPageContents {
-    display: flex;
     /* background-color: red; */
     max-width: 1300px;
-
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
 }
+
+
 
 .skills {
     display: flex;
@@ -162,6 +165,8 @@ body {
 .logo svg rect {
     fill: #0E192D;
 }
+
+
 
 
 
@@ -198,7 +203,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 10vh;
-    margin-bottom: 50vh;
+    margin-bottom: 5vh;
 }
 
 .gitHubIcon svg, .linkedInIcon svg {
@@ -208,20 +213,25 @@ body {
 
 .introductionTextSection {
     color: #0E192D;
-    margin-right: 30px;
+    margin-right: 2vw;
 }
 
-.landingPageContents .introductionTextSection p.hi {
+.myName a {
+    font-weight: bold;
+    /* color: #F56E6C; */
+}
+
+.landingPageContents .introductionTextSection p#hi {
     color: #F56E6C;
-    font-size: 25px;
+    font-size: 70px;
+    font-weight: bold;
 }
 
-.myName {
-    font-size: 70px;
-}
+
 
 .introductionTextSection p {
-    font-size: 25px;
+    font-size: 40px;
+    margin-top: 1vh;
 }
 
 
@@ -280,13 +290,13 @@ body {
 }
 
 .aboutMeText p {
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 2vh;
     margin-right: 20px;
 }
 
 .aboutMeImage {
-    width: 2500px;
+    width: 1500px;
     /* height: 120px; */
 }
 
