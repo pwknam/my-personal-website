@@ -125,20 +125,18 @@ body {
         width: 401px;
         height: 435px;
     }
+
 }
 
 .landingPage {
     display: flex;
     margin-top: 10vh;
     justify-content: center;
-    /* background-color: red; */
 }
 
 .landingPageContents {
-    /* background-color: red; */
     max-width: 1300px;
     display: flex;
-    /* flex-direction: row-reverse; */
     align-items: center;
 }
 
@@ -249,33 +247,11 @@ body {
     color: #F9B828;
 }
 
-@media (max-width: 1250px) {
-    .landingPage {
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-    .landingPageContents {
-        display: block;
-        /* max-width: 75%; */
-    }
-
-    .profilePicture {
-        margin-top: 2vh;
-    }
-
-    .introductionTextSection h1 {
-        font-size: 50px;
-    }
-
-    .introductionTextSection p {
-        font-size: 17.5px;
-    }
-}
-
 #aboutMe {
     margin-top: 20vh;
-    display: flex;
     justify-content: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .aboutMeContents {
@@ -296,11 +272,49 @@ body {
 }
 
 .aboutMeImage {
-    width: 1500px;
+    /* width: 1500px; */
     /* height: 120px; */
 }
 
 .aboutMeImage img {
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 100%;
+}
+
+@media (max-width: 1250px) {
+    .landingPage {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .landingPageContents {
+        display: block;
+        /* max-width: 75%; */
+    }
+
+    .aboutMe {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    
+    }
+
+    .aboutMeContents {
+        display: block;
+    }
+
+    .profilePicture {
+        margin-top: 2vh;
+    }
+
+    .introductionTextSection h1 {
+        font-size: 50px;
+    }
+
+    .introductionTextSection p {
+        font-size: 17.5px;
+    }
+
+    .aboutMeImage img {
+        width: 50%;
+        height: auto;
+    }
 }
